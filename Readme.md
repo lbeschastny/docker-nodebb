@@ -7,7 +7,7 @@ NodeBB Dockerfile
 
 ## Redis
 
-    docker run --name nodebb-redis -v /opt/nodebb/data:/data -d redis:2.8 redis-server
+    docker run --name nodebb-redis --restart=always -v /opt/nodebb/data:/data -d redis:2.8 redis-server
 
 ## Redis-cli
 
